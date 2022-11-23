@@ -54,18 +54,6 @@ while(i<length){
 }
 return f;
 }
-string itc_even_place(string str){
-int length = itc_len(str);
-int c=0;
-int i=0;
-while(i<length){
-if(c%2==0){
-    cout<<str[c];
-   }
-i++;
-c++;
-}
-}
 
 
 
