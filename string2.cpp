@@ -8,4 +8,21 @@ if(i%2==0){
     cout<<str[i];
    }
 }
+string itc_reverse_str(string str){
+int length = itc_len(str);
+for(int i=length;i>-1;i--){
+    cout<<str[i];
+}
+}
+ string itc_slice_str(string str, int start, int end){
+ int length = itc_len(str);
+ int i=0;
+while(i<start){
+    i++;
+    }
+while(i<end){
+    cout<<str[i];
+    i++;
+    }
 
+}
