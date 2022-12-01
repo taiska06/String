@@ -1,16 +1,5 @@
 #include "str_easy.h"
 using namespace std;
-string itc_even_place(string str) {
-long long len = itc_len(str);
-if (len < 2){
-return "-1";
-}
-string a;
-for (long long i = 1; i < len; i=i+2){
-a = a+str[i];
-}
-return a;
-}
 double itc_percent_lower_uppercase(string str){
     int a=0;
     int b=0;
@@ -26,4 +15,25 @@ double itc_percent_lower_uppercase(string str){
       i++;
  }
 return (a/b)*100;
+}
+
+string itc_even_place(string str) {
+long long length = itc_len(str);
+if (length < 2){
+return "-1";
+}
+string a;
+for (long long i = 1; i < length; i=i+2){
+a = a+str[i];
+}
+return a;
+}
+
+string itc_reverse_str(string str){
+long long lenght = itc_len(str);
+string a;
+for(int i=lenght;i>0;i--){
+    a=a+str[i];
+}
+return a;
 }
