@@ -37,18 +37,4 @@ for(int i=lenght;i>0;i--){
 }
 return a;
 }
- string  itc_slice_str(string str, int start, int end){
-long long length = itc_len(str);
-int a=0;
-int i=0;
-string b;
-  if (end > length)
-        end = length;
-while(str [i]!= '\0'){
-        if (a >= start && a <= end)
-           b+=str[a];
-        a++;
-        i++;
-    }
-    return b;
-}
+
