@@ -1,17 +1,6 @@
 #include <iostream>
 using namespace std;
-#include"string3.h"
-
- long long itc_len(string str){
-     int kol,i;
-     kol=0;
-     i=0;
-     while(str [i]!= '\0'){
-      kol++;
-      i++;
- }
- return kol;
- }
+#include"str_easy.h"
 string itc_cmp_str(string str1, string str2, int num){
 int length2=itc_len(str2);
 int length1=itc_len(str1);
