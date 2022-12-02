@@ -29,13 +29,24 @@ a = a+str[i];
 return a;
 }
 
-string itc_reverse_str(string str){
+ string itc_reverse_str(string str){
 long long lenght = itc_len(str);
 string a;
-for(int i=lenght;i>=0;i--){
-    a=a+str[i];
+for(int i=lenght-1;i>=0;i--){
+     a+=str[i];
 }
 return a;
+}
+
+bool itc_equal_reverse(string str){
+long long length = itc_len(str);
+string s=itc_reverse_str(str);
+if(s==str){
+    return 1;
+}
+    else{
+        return 0;
+    }
 }
  string  itc_slice_str(string str, int start, int end){
 long long length = itc_len(str);
