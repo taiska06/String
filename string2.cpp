@@ -32,7 +32,7 @@ return a;
 string itc_reverse_str(string str){
 long long lenght = itc_len(str);
 string a;
-for(int i=lenght;i>0;i--){
+for(int i=lenght;i>=0;i--){
     a=a+str[i];
 }
 return a;
