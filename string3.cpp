@@ -29,16 +29,16 @@ int length1=itc_len(str1);
 int a = -1;
 int c = 0;
 int i,b;
+int n=0;
        if (length2 > length1){
         return -1;
        }
-    for ( i = 0, b=0 ; str1[i] != str2[b]; i++ , b++) {
-             c++;
+    for ( i = 0, b=0 ; str1[i] != str2[b]; i++) {
+            c++;
+
+            }
+            return c;
         }
-
-    return c;
-}
-
 
 
 
