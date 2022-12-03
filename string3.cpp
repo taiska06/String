@@ -30,15 +30,19 @@ int a = -1;
 int c = 0;
 int i,b;
 int n=0;
-       if (length2 > length1){
+     if (length2 > length1){
         return -1;
        }
-    for ( i = 0, b=0 ; str1[i] != str2[b]; i++) {
+    for ( i = 0, b=0 ; str1[i] != str2[b] && length1!=c; i++) {
             c++;
-
-            }
-            return c;
+}
+        if(length1!=c){
+        return c;
         }
+        else{
+            return -1;
+        }
+}
 
 
 
