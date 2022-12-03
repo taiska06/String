@@ -69,4 +69,21 @@ while(str [i]!= '\0'){
     }
     return b;
 }
+string itc_three_str(string str1, string str2, string str3){
+int i = itc_find_str(str1, str2);
+int length2=itc_len(str2);
+int length1=itc_len(str1);
+int length3=itc_len(str3);
+string a;
+string b;
+ while (i > -1) {
+        a = itc_slice_str(str1, 0, i - 1);
+        b = itc_slice_str(str1, i + length2, length1);
+        str1 = a + str3 + b;
+        i = itc_find_str(str1, str2);
+    }
+    return str1;
+
+
+ }
 
