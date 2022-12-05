@@ -23,6 +23,7 @@ for(int i=num+c;i<length1;i++){
 }
 return a;
   }
+
 int itc_find_str(string str1, string str2){
 int length2=itc_len(str2);
 int length1=itc_len(str1);
@@ -33,15 +34,21 @@ int n=0;
      if (length2 > length1){
         return -1;
        }
-    for ( i = 0, b=0 ; str1[i] != str2[b] && length1!=c; i++) {
-            c++;
+    for ( i = 0; i<length1; i++) {
+        if(str1[i]==str2[0]){
+            while(str1[i+n]==str2[n]){
+                n++;
+            }
+        }
+
+        }
+        if(n!=0){
+        return n;
+
 }
-        if(length1!=c){
-        return c;
-        }
-        else{
-            return -1;
-        }
+else{
+    return -1;
+}
 }
 
 
