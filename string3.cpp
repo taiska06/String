@@ -15,7 +15,7 @@ else{
 for(int i=0;i<num;i++){
     a+=str1[i];
 }
-for(int i=num-(length1-length2);i<length2 && i<length1;i++){
+for(int i=num-1;i<length2 && i<length1;i++){
 a+=str2[i];
 c++;
 }
