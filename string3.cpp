@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include"str_easy.h"
+
 string itc_cmp_str(string str1, string str2, int num){
 int length2=itc_len(str2);
 int length1=itc_len(str1);
@@ -13,7 +14,7 @@ else{
 for(int i=0;i<num;i++){
     a+=str1[i];
 }
-for(int i=num;i<length2 && i<length1;i++){
+for(int i=num-1;i<length2 && i<length1;i++){
 a+=str2[i];
 c++;
 }
