@@ -27,31 +27,29 @@ for(r=0;str2[r]!='\0';r++){
 }
 }
 
-int itc_find_str(string str1, string str2){
-int length2=itc_len(str2);
-int length1=itc_len(str1);
-int a = -1;
-int c = 0;
-int i,b;
-int n=0;
-     if (length2 > length1){
+int itc_find_str(string str1, string str2) {
+    int length2=itc_len(str2);
+    int length1=itc_len(str1);
+      int a = -1;
+    int j = 0;
+    if (length2 > length1){
         return -1;
-       }
-    for ( i = 0; i<length1; i++) {
-        if(str1[i]==str2[0]){
-            while(str1[i+n]==str2[n]){
-                n++;
-            }
-        }
 
+    }
+  for (int i = 0; i < length1; i++) {
+        if (  j >= length2)
+            break;
+        if (str1[i] == str2[j]) {
+            if (j == 0)
+                a = i;
+                 j++;
         }
-        if(n!=0){
-        return n;
-
-}
-else{
-    return -1;
-}
+        else {
+            a = -1;
+            j = 0;
+        }
+    }
+    return a;
 }
 
 
