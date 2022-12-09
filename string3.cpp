@@ -1,30 +1,31 @@
 #include <iostream>
 using namespace std;
 #include"str_easy.h"
-
-
-string itc_cmp_str(string str1, string str2, int num){
+ itc_cmp_str(string str1, string str2, int num){
 int length2=itc_len(str2);
 int length1=itc_len(str1);
 string a;
-int c;
-if(num>length2){
+int i, r;
+if(length1<num){
     return str1;
 }
 else{
-for(int i=0;i<num;i++){
+for(i=0;i< num;i++){
     a+=str1[i];
 }
-for(int i=num-1;i<length2 && i<length1;i++){
-a+=str2[i];
-c++;
+for(r=0;str2[r]!='\0';r++){
+    if(i<length1){
+        a+=str2[r];
+        i++;
+    }
 }
-for(int i=num+c;i<length1;i++){
-    a+=str1[i];
+    if(i<= length1){
+        for(i;str1[i]!='\0';i++)
+          a+=str1[i];
+    }
+    return a;
 }
 }
-return a;
-  }
 
 int itc_find_str(string str1, string str2){
 int length2=itc_len(str2);
