@@ -6,6 +6,8 @@ int length2=itc_len(str2);
 int length1=itc_len(str1);
 string a;
 int i, r;
+int n=0;
+int c=0;
 if(length1<num){
     return str1;
 }
@@ -13,16 +15,14 @@ else{
 for(i=0;i< num;i++){
     a+=str1[i];
 }
-for(r=0;str2[r]!='\0';r++){
-    if(i<length1){
+for(r=0,c=num;str2[r]!='\0';r++, c++){
+    if(c<length1){
         a+=str2[r];
-        i++;
     }
 }
-    if(i<= length1){
-        for(i;str1[i]!='\0';i++)
+for(int i=num;i<length1-length2;i++){
           a+=str1[i];
-    }
+}
     return a;
 }
 }
