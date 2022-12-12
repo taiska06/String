@@ -51,6 +51,26 @@ int itc_find_str(string str1, string str2) {
     }
     return a;
 }
+string itc_three_str(string str1, string str2, string str3){
+int length2=itc_len(str2);
+int length1=itc_len(str1);
+int length3=itc_len(str3);
+string a;
+int i = itc_find_str(str1,str2);
+for(int c=0;c<i;c++){
+        a+=str1[c];
+
+}
+for(int c=0;c<length3;c++){
+        a+=str3[c];
+
+}
+for(int c=length2+i;c< length1;c++){
+        a+=str1[c];
+
+}
+return a;
+}
 
 
 
