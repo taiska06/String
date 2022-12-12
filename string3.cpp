@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 #include"str_easy.h"
- itc_cmp_str(string str1, string str2, int num){
+string itc_cmp_str(string str1, string str2, int num){
 int length2=itc_len(str2);
 int length1=itc_len(str1);
 string a;
