@@ -56,7 +56,7 @@ string itc_three_str(string str1, string str2, string str3){
     long long lenght1= itc_len(str1);
     int i = itc_find_str(str1, str2);
   
-    }
+    
     return str1;
 }
 int itc_max_char_on_end(string str){
