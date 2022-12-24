@@ -26,7 +26,6 @@ for(int i=num;i<length1-length2;i++){
     return a;
 }
 }
-string itc_three_str(string str1, string str2, string str3){
 int itc_find_str(string str1, string str2) {
     int length2=itc_len(str2);
     int length1=itc_len(str1);
@@ -51,7 +50,8 @@ int itc_find_str(string str1, string str2) {
     }
     return a;
 }
- long long lenght2 = itc_len(str2);
+string itc_three_str(string str1, string str2, string str3){
+  long long lenght2 = itc_len(str2);
     long long lenght1= itc_len(str1);
     int i = itc_find_str(str1, str2);
     while (i != -1) {
