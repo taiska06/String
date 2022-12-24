@@ -64,7 +64,7 @@ long long lenght = itc_len(str);
 int x = 0;
 int xmax = 0;
 for (int i = 0; i < lenght; i++) {
-        if (str[i]<str[i+1]) {
+        if (str[i]>=48 && str[i]<=57) {
             x++;
         }
         else {
@@ -75,7 +75,7 @@ for (int i = 0; i < lenght; i++) {
         }
 
   }
-  return xmax+1;
+  return xmax;
 }
 
 
