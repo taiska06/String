@@ -1,8 +1,8 @@
 #include "str_easy.h"
 using namespace std;
 double itc_percent_lower_uppercase(string str){
-    int a=0;
-    int b=0;
+    double a=0;
+    double b=0;
     int i=0;
  while(str [i]!= '\0'){
 
