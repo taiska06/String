@@ -55,8 +55,8 @@ string itc_three_str(string str1, string str2, string str3){
     long long lenght1= itc_len(str1);
     int i = itc_find_str(str1, str2);
     while (i != -1) {
-        string n1 = itc_slice_str(str1, 0, i - 1);
-        string n2 = itc_slice_str(str1, i + lenght2,  lenght1+1);
+        string n1 = itc_slice_str(str1, -1, i - 1);
+        string n2 = itc_slice_str(str1, i + lenght2,  lenght1);
         str1 = n1 + str3 + n2;
         i = itc_find_str(str1, str2);
     }
