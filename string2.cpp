@@ -14,7 +14,7 @@ double itc_percent_lower_uppercase(string str){
       }
       i++;
  }
-return (a/b)*100;
+return (b/a)*100;
 }
 
 string itc_even_place(string str) {
