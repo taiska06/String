@@ -23,6 +23,7 @@ for(r=0,c=num;str2[r]!='\0';r++, c++){
 for(int i=num;i<length1-length2;i++){
           a+=str1[i];
 }
+}
     return a;
 }
 int itc_find_str(string str1, string str2) {
