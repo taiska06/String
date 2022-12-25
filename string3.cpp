@@ -63,11 +63,12 @@ string itc_three_str(string str1, string str2, string str3){
     return str1;
 }
 int itc_max_char_on_end(string str){
+int itc_max_char_on_end(string str){
 long long lenght = itc_len(str);
 int x = 0;
 int xmax = 0;
 for (int i = 0; i < lenght; i++) {
-        if ((str[i]>str[i+1] || str[i]<str[i+1]) &&  str[i]>=48 && str[i]<=57) {
+        if ( str[i]>=48 && str[i]<=57) {
             x++;
         }
         else {
